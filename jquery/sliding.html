@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+$("document").ready(function(){
+
+$("#slide-up").click(function(){
+$("#para").slideUp(4000,"linear");
+
+});
+$("#slide-down").click(function(){
+$("#para").slideDown("fast","linear");
+
+});
+
+$("#toggleSlide").click(function(){
+$("#para").slideToggle("fast","linear");
+    alert("Done");
+});
+});
+</script>
+</head>
+<body>
+    <a id="slide-up" href="#">Click here to slide up</a>
+    <a id="slide-down" href="#">Click here to slide-down</a>
+    <a id="toggleSlide" href="#">Click here</a>
+    <p id="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+</body>
+</html>
